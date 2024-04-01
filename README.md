@@ -22,4 +22,10 @@ secCheck.sh
 Looks to see on an Ubuntu OS for STIG UBTU-20-010004 to see if the GUI screen lock is enabled or not. If true, it will say if its compliant or not. If false, it will ask the user if they want to enable or not by asking a yes or no question if the user wants to enable or keep it disabled on their system. 
 
 securitylogs1.sh and securitylogs1v2.sh
+Both take in an auth.log and look for information relating to Invalid User, Failed password for Ubuntu, Failed password for root, and Invalid User and prints the result
 
+storebypass-1.sh
+Takes a directory path as input and lists the files that contain Speculative Store Bypass and determines if the file is vulnerable, not vulnerable, or undetermined and then prints the file containing the words Speculative Store bypass
+
+vulnerability_pattern.sh
+Takes a file as input and looks to see if the file contains the Speculative Store Bypass key words. If there are, it will print Vulnerability found. If not, it will print no vulnerabilities were found. 
